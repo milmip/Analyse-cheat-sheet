@@ -34,7 +34,7 @@
 	\item Opérations.
 \end{itemize}
 \hr 
-\section*{Série}
+\section*{Séries}
 Definition : $s_{n} := \sum_{k=0}^{n} a_n$.
 
 Garder en tête:
@@ -42,7 +42,7 @@ Garder en tête:
 \sum \frac{1}{n ^{\alpha}} \left\{ 
     \begin{array}{lcl}
         < \infty & \text{si} & \alpha > 1 \\
-        \infty & \text{si} & \alpha \leq 0 
+        = \infty & \text{si} & \alpha \leq 0 
     \end{array}
 \right.
 .\] 
@@ -63,9 +63,80 @@ Garder en tête:
 	\item Raabe-Duhamel.	
 \end{itemize}
 
-\section*{Fonction}
+\section*{Fonctions}
 
+\textbf{Limite ponctuelle}: $\lim_{x \to a} f(x)$
+\[
+\forall \epsilon > 0, \exists \delta > 0, x \in D(f), 0 < |x-a| < \delta \implies |f(x) -l| < \epsilon
+.\] 
 
+\textbf{Outils}
+\begin{itemize}
+	\item Lien avec les suites.
+	\item Sandwich.
+	\item Opérations.
+	\item Compositions.
+\end{itemize}
+
+\textbf{Continuité} : si $\lim_{x \to a} f(x) = f(a)$
+
+\textbf{Implications} (sur intervals fermés)
+\begin{itemize}
+	\item Min-max.
+	\item TVI.
+\end{itemize}
+
+\textbf{Continuité uniforme}
+\[
+\forall \epsilon >0, \exists \delta > 0, x,y \in D(f). |x-y| < \delta \implies |f(x) - f(y)| < \epsilon
+.\] 
+
+\textbf{Outils}
+
+(pour prouver)
+\begin{itemize}
+	\item Definition.
+	\item Intervals fermés, ok.
+	\item Intervals ouverts, ok \emph{si prolongeable} (même à l'infini).
+	\item $f$ est $M$-lipschitzienne. (suffisant mais pas nécessaire)
+\end{itemize}
+(pour réfuter)
+\begin{itemize}
+	\item Suites $x_{n}, y_{n}$ particulières.
+\end{itemize}
+
+\section*{Dérivées}
+\textbf{Rolle} : ($f$ continue dérivable) $\exists c \text{ t.q. } f'(c) = 0$.
+
+\textbf{TAFG} : (=) $\exists c \text{ t.q. } \left[ f(b) - f(a) \right] g'(c) = \left[ g(b) - g(a) \right] f'(c)$.
+
+\textbf{TAF} : (=) $\exists c \text{ t.q. } ( f(b) - f(a) ) = ( b - a ) f'(c)$.
+
+\textbf{Croissance}: $f \nearrow \iff f'(x) \bf{\geq } 0$, ect.
+
+\textbf{$L$-Lipschitzienne}: $\exists L\in \R_{+}$ t.q. 
+\[
+\forall x, y \in D(f), |f(x) - f(y)| \leq L |x - y|
+.\] 
+
+\textbf{Extremas} : \textbf{1}. $\in \{a, b\} $, \textbf{2}. pt. crit., \textbf{3} . pt. $f$ non dérivable.
+
+\textbf{Convexité} : $f$ est convexe sur $(a, b)$ si :
+\[
+\forall \lambda \in  [0, 1], \forall x_1, x_2 \in (a, b), f(\lambda x_1 + (1-\lambda)x_2) \leq \lambda f(x_1) + (1-\lambda)f(x_2)
+.\] 
+\textbf{Concavité} : $-f$ convexe.
+
+\textbf{Implications} 
+\begin{itemize}
+	\item $f$ continue !
+	\item $\iff f' \nearrow $.
+	\item $\iff f'' \geq 0 $.
+\end{itemize}
+
+\textbf{Bernoulli - L'Hôpital} 
+
+\section*{Développement limité}
 \end{multicols}
 
 \end{document}
