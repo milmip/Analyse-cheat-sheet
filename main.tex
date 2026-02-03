@@ -1,0 +1,71 @@
+\documentclass[10pt,a4paper,twoside]{article}
+\input{./preamble.tex}
+
+\begin{document}
+
+\begin{multicols}{2}
+
+\section*{Suites}
+\textbf{Convergence} : $\lim_{n \to \infty} x_{n} = l$
+\[
+\forall \epsilon > 0,  \exists N \in \N,   \forall n \geq N , |x_{n} - l| < \epsilon
+.\] 
+\[
+\text{Cauchy: } \forall \epsilon > 0,  \exists N \in \N,   \forall n,m \geq N , |x_{n} - x_{m}| < \epsilon
+.\] 
+
+\textbf{Non-convergence} :  $\lim_{n \to \infty} x_{n} \neq  l$
+\[
+\exists  \epsilon > 0,  \forall  N \in \N,   \exists  n \geq N ,  |x_{n} - l| \geq  \epsilon
+.\] 
+\textbf{Divergence} : $\lim_{n \to \infty} x_{n} = \pm \infty$
+\[
+\forall M > 0,  \exists N \in \N,   \forall n \geq N,   x_{n} > M \text{ (ou) } x_{n} < -M
+.\] 
+\textbf{Non-divergence} : $\lim_{n \to \infty} x_{n} \neq  \pm \infty$
+\[
+\exists  M > 0,  \forall  N \in \N,   \exists  n \geq N , x_{n}  \leq  M \text{ (ou) } x_{n} \geq -M
+.\] 
+\textbf{Outils}
+\begin{itemize}
+	\item Sandwich.
+	\item Cauchy $\iff$ convergence.
+	\item $x_{n} \nearrow $ et $x_{n}$ bornée sup. $\implies$ convergence.
+	\item Opérations.
+\end{itemize}
+\hr 
+\section*{Série}
+Definition : $s_{n} := \sum_{k=0}^{n} a_n$.
+
+Garder en tête:
+\[
+\sum \frac{1}{n ^{\alpha}} \left\{ 
+    \begin{array}{lcl}
+        < \infty & \text{si} & \alpha > 1 \\
+        \infty & \text{si} & \alpha \leq 0 
+    \end{array}
+\right.
+.\] 
+
+\textbf{Outils} 
+\begin{itemize}
+	\item Convergence $\iff $ queue de série $\longrightarrow 0$.
+	\item $x_{n} \to  \neq 0  \quad  \implies $ divergence.
+	\item $\sum x_{n}  \leq  \sum |x_{n}| < \infty $.
+	\item $\infty  = \sum x_{n}  \leq  \sum |x_{n}| = \infty $.
+	\item Critère de Leibnitz sur les séries alternées.
+	\item Comparaison \textbf{direct}  (1er critière).
+	\item Comparaison de \textbf{croissance}  (2ème critère).
+	\item Similitude de comportement (3ème critère).
+	\item Quotient d'Alembert.
+	\item Racine de Cauchy.
+	\item Condensation ($p_n \searrow$).
+	\item Raabe-Duhamel.	
+\end{itemize}
+
+\section*{Fonction}
+
+
+\end{multicols}
+
+\end{document}
