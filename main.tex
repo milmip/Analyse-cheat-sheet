@@ -175,7 +175,28 @@ Garder en tête:
 	\item Si $f_{n} \in \cC^{0}$, alors  $f \in \cC^{0} $ (aussi pour réfuter, si $f \not\in \cC^{0}$).
 \end{itemize}
 
+\section*{Séries entières}
+Définition : $f(x) =  \sum_{n=0}^{\infty} a_n x^n$.
 
+Domaine : $D(f) := \{x \text{ t.q. } f(x) < \infty\}  = [-R, R)$ (ouvert/fermé à voir les cas).
+
+Rayon : $R := \sup |D(f)|$.
+
+\textbf{Implications}:  $\forall 0 < \rho < R$
+\[
+	\sum_{k=0}^{n} |a_k x^k| \xlongrightarrow{U} f(x), \text{ sur } [-\rho, \rho] \text{ (puissant)}
+.\] 
+
+\textbf{Outils} (pour trouver le rayon)
+\begin{itemize}
+	\item Définition.
+	\item $R = 1/\lim_{n \to \infty} \sup \sqrt[n]{|a_{n}|}$.
+	\item $R = 1/\lim_{n \to \infty} \l|\frac{a_{n+1}}{a_{n}}\r| $
+\end{itemize}
+\textbf{Implications} 
+\begin{itemize}
+	\item $f \in \cC^{\infty}((-R, R), \R) $.
+\end{itemize}
 
 \end{multicols}
 
