@@ -147,6 +147,36 @@ Garder en tête:
 	f'(x) = \sum_{k=1}^{n} \frac{f^{(k)}(a)}{(k-1)!}(x-a)^{k-1} + \frac{f^{(n+1)}(c)}{n!}(x-a)^{n}
 .\]
 
+\section*{Suites de fonctions}
+\textbf{Convergence ponctuelle} 
+\[
+	\forall \epsilon > 0, \forall x \in E, \exists N(\epsilon, x) \in \N, \forall  n \geq N , |f_{n}(x) - f(x)| < \epsilon
+.\] 
+\textbf{Convergence uniforme} 
+\[
+	\forall \epsilon > 0, \exists N(\epsilon) \in \N, \forall  n \geq N , |f_{n}(x) - f(x)| < \epsilon, \forall x \in E
+.\] 
+\textbf{Uniformité de Cauchy}
+\[
+	\forall \epsilon > 0, \exists N(\epsilon) \in \N, \forall  n,m \geq N , |f_{n}(x) - f_{m}(x)| < \epsilon, \forall x \in E
+.\] 
+
+\textbf{Outils} 
+\begin{itemize}
+	\item Non conv. ponct. $\implies$ Non conv. unif.
+	\item (prouver conv. u.) $\lim_{n \to \infty} \sup \{|f_{n}(x) - f(x)|,\quad  x \in E\} $.
+	\item Unif. de Cauchy $\iff $ unif. convergence.
+	\item Combinaison \textbf{préserve} la conv. unif.
+	\item \emph{Dini} sur les suites monotones.
+\end{itemize}
+\textbf{Implications} : si $f_{n} \xlongrightarrow{U} f$
+\begin{itemize}
+	\item Alors $\lim_{x \to a} \lim_{n \to \infty} f_{n}(x) = \lim_{n \to \infty} \lim_{x \to a} f_{n}(x)$ 
+	\item Si $f_{n} \in \cC^{0}$, alors  $f \in \cC^{0} $ (aussi pour réfuter, si $f \not\in \cC^{0}$).
+\end{itemize}
+
+
+
 \end{multicols}
 
 \end{document}
